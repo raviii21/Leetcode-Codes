@@ -1,0 +1,18 @@
+// Link: https://leetcode.com/problems/rank-scores
+
+/** Submission Info:
+ *
+ *  AUTHOR: Ravi Savsani
+ *  TITLE: rank-scores
+ *  RUNTIME: 486 ms
+ *  MEMORY: 0B
+ *  DATE: 2-10-2023, 7:11:06 PM
+ *
+ */
+
+// Solution:
+
+# Write your MySQL query statement below
+SELECT score,
+DENSE_RANK() OVER (ORDER BY score DESC) AS 'rank'
+FROM Scores

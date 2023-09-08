@@ -1,0 +1,19 @@
+// Link: https://leetcode.com/problems/combine-two-tables
+
+/** Submission Info:
+ *
+ *  AUTHOR: Ravi Savsani
+ *  TITLE: combine-two-tables
+ *  RUNTIME: 804 ms
+ *  MEMORY: 0B
+ *  DATE: 2-10-2023, 7:00:19 PM
+ *
+ */
+
+// Solution:
+
+# Write your MySQL query statement below
+SELECT firstName,lastName,city,state
+FROM Person
+LEFT JOIN Address
+ON Person.personId = Address.personId;
